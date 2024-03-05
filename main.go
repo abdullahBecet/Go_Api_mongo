@@ -19,6 +19,8 @@ func main() {
 	td := app.TodoHandler{Service: services.NewTodoService(TodoRepostoryDb)}
 
 	appRoute.Post("/api/todo", td.CreateTodo)
-	appRoute.Listen("8080")
+	appRoute.Get("/api/todos", td.GetAllTodo)
+	appRoute.Delete("/api/todo/:id", td.DeleteTodo)
+	appRoute.Listen(":8080")
 
 }
