@@ -17,6 +17,9 @@ func main() {
 	TodoRepostoryDb := repository.NewTodoRepositoryDb(dbClient)
 
 	td := app.TodoHandler{Service: services.NewTodoService(TodoRepostoryDb)}
+	appRoute.Get("/api/anasayfa", func(c *fiber.Ctx) error {
+		return c.SendFile("index.html")
+	})
 
 	appRoute.Post("/api/todo", td.CreateTodo)
 	appRoute.Get("/api/todos", td.GetAllTodo)
