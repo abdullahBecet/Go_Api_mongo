@@ -1,23 +1,23 @@
 
-Todo API Project
-Description:
+# Todo API Project
+## Description:
 
 This project aims to create a simple Todo API using Go and MongoDB. Users can create, read, update, and delete todos using the API.
 
-Features:
+## Features:
 
 Create, read, update, and delete todos
 Data exchange in JSON format
 Data storage with MongoDB
 API development with Go
-Setup:
+## Setup:
 
 Install Go and MongoDB on your computer.
-Initialize the Go module using the **go mod init** command.
+Initialize the Go module using the ```go mod init``` command.
 Review the code in the main.go file and customize the API as you wish.
-Run the API using the**go run main.go** command.
+Run the API using the ```go run main.go``` command.
 
-Notes:
+## Notes:
 
 This project is a simple example and is open to further development.
 You need to be careful about error handling and authentication.
