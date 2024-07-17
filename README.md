@@ -13,9 +13,9 @@ API development with Go
 ## Setup:
 
 Install Go and MongoDB on your computer.
-Initialize the Go module using the ``` bash go mod init``` command.
+Initialize the Go module using the ```  go mod init``` command.
 Review the code in the main.go file and customize the API as you wish.
-Run the API using the ```bash go run main.go``` command.
+Run the API using the ``` go run main.go``` command.
 
 ## Notes:
 
